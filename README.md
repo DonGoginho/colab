@@ -18,6 +18,6 @@ Um den Output von LOSD via LOSD-Harvester zu testen sind hier ein paar Skripts v
 
 - [Bevölkerung nach Zivilstand, Geschlecht, Alter und Stadtquartier (od3310)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/3310_losd_bev_bestand_jahr_quartier_zivilstand_ag_geschl_od3310.ipynb)
 
-- [Todesfälle nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft (od3310)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/4210_losd_bev_monat_todesfaelle_quartier_geschl_ag_herkunft_od4210.ipynb)
+- [Todesfälle nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft (od4210)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/4210_losd_bev_monat_todesfaelle_quartier_geschl_ag_herkunft_od4210.ipynb)
 
 
