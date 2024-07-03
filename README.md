@@ -20,7 +20,7 @@ Um den Output von LOSD via LOSD-Harvester zu testen sind hier ein paar Skripts v
 
 Ältere Versionen, nicht aktiv im Moment:
 
-- [Bevölkerung nach Konfession, seit 1934 (od3160)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/bev3160_losd_bev_bestand_jahr_konfession_od3160.ipynb)
+- [Bevölkerung nach Konfession, seit 1934 (od3160)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/colab_bev3160_losd_bev_bestand_jahr_konfession_od3160.ipynb)
 
 
 - [Bevölkerung nach Zivilstand, Geschlecht, Alter und Stadtquartier (od3310)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/3310_losd_bev_bestand_jahr_quartier_zivilstand_ag_geschl_od3310.ipynb)
