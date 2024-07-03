@@ -13,7 +13,7 @@ Um den Output von LOSD via LOSD-Harvester zu testen sind hier ein paar Skripts v
 
 - [Bevölkerung nach Stadtkreis, seit 1993 (od3242)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/bev3242_losd_bev_bestand_jahr_kreis_od3242.ipynb)
 
-- [Bevölkerung, seit 1901 (od3243)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/bev3243_losd_bev_bestand_jahr_od3243.ipynb)
+- [Bevölkerung, seit 1901 (od3243)](https://colab.research.google.com/github/DonGoginho/colab/blob/main/losd/colab_bev3243_losd_bev_bestand_jahr_od3243.ipynb)
 
 
 
