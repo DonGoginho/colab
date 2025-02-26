@@ -40,12 +40,12 @@ def load_data(status, data_source, package_name, dataset_name, **kwargs):
         ckan_integ_url = kwargs.get('ckan_integ_url', 'https://data.integ.stadt-zuerich.ch/dataset/')
         ckan_prod_url = kwargs.get('ckan_prod_url', 'https://data.stadt-zuerich.ch/dataset/')
 
-        ckan_integ_harvester_name = kwargs.get('ckan_integ_harvster_name', 'INT_DWH') 
+        ckan_integ_harvester_name = kwargs.get('ckan_integ_harvester_name', 'INT_DWH_') 
 
         dropzone_path_integ = kwargs.get('dropzone_path_integ',r"\\szh\ssz\applikationen\OGD_Dropzone\INT_DWH")
         dropzone_path_prod = kwargs.get('dropzone_path_prod',r"\\szh\ssz\applikationen\OGD_Dropzone\DWH")
 
-        ld_integ_url = kwargs.get('ld_integ_url','https://ld.integ.stadt-zuerich.ch/statistics/view/')     
+        ld_integ_url = kwargs.get('ld_integ_url','https://ld.integ.stzh.ch/statistics/view/')     
         ld_prod_url = kwargs.get('ld_prod_url', 'https://ld.stadt-zuerich.ch/statistics/view/')
 
         file_format  = kwargs.get('file_format', '.csv')
@@ -72,8 +72,9 @@ def load_data(status, data_source, package_name, dataset_name, **kwargs):
                 display(md(" **View auf INTEG-LD:** Link {} ".format(ld_integ_url+package_name.upper())))
 
             else:
-                #fp = ckan_prod_url+package_name.lower()+'/download/'+dataset_name+file_format
-                fp = ckan_prod_url+package_name.lower()+'/download/'+dataset_name.upper()+file_format
+                fp = ckan_prod_url+package_name.lower()+'/download/'+dataset_name+file_format
+                # Nur bei SASA-Jobs sind die Filenamen immer gross. Sonst kann alles vorkommen. Daher dataset_name.upper() hier nicht angebracht.
+                # fp = ckan_prod_url+package_name.lower()+'/download/'+dataset_name.upper()+file_format
                 print("fp lautet:"+fp)
                 display(md(" **Überprüfe die Metadaten:**"))
                 display(md(" **Dataset auf PROD-Datakatalog:** Link {} ".format(ckan_prod_url+package_name.lower())))
@@ -92,10 +93,10 @@ def load_data(status, data_source, package_name, dataset_name, **kwargs):
                 display(md(" **View auf INTEG-LD:** Link {} ".format(ld_integ_url+package_name.upper())))
 
             else:
-                fp = ckan_integ_url+ckan_integ_harvester_name.lower()+'_'+package_name+'/download/'+dataset_name.upper()+file_format
+                fp = ckan_integ_url+ckan_integ_harvester_name.lower()+package_name+'/download/'+dataset_name+file_format
                 print("fp lautet:"+fp)
                 display(md(" **Überprüfe die Metadaten:**"))
-                display(md(" **Dataset auf INTEG-Datakatalog:** Link {} ".format(ckan_integ_url+ckan_integ_harvester_name.lower()+'_'+package_name.lower())))                
+                display(md(" **Dataset auf INTEG-Datakatalog:** Link {} ".format(ckan_integ_url+ckan_integ_harvester_name.lower()+package_name.lower())))                
                 display(md(" **Dataset auf PROD-Datakatalog:** Link {} ".format(ckan_prod_url+package_name.lower())))
 
 
